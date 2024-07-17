@@ -1,0 +1,13 @@
+# build image
+docker build -t http-echo .
+
+# expose port
+docker run -d --rm --name http-echo -p 80:80 http-echo 
+
+docker exec -it http-echo bash
+
+docker stop http-echo
+
+docker ps -a |grep http
+
+
