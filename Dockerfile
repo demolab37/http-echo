@@ -7,6 +7,8 @@ RUN apt-get update && apt-get install -y \
     curl \
     iputils-ping \
     less \
+    procps \
+    vim \
     && rm -rf /var/lib/apt/lists/*
 
 # Expose the default NGINX port
